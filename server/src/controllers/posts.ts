@@ -41,3 +41,13 @@ export const updatePost = async (req : Request, res : Response) => {
         res.status(400).json({success: false, error})
     }
 }
+
+
+export const deletePost = async (req : Request, res : Response) => {
+    try {
+        const post = await Post.findOneAndDelete({ _id: req.params.id });
+        res.status(200).json("Post was deleted");
+       } catch (error) {
+        res.status(404).json({ success: false, error });
+       }
+}
