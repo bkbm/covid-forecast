@@ -1,0 +1,21 @@
+ .App-Header {
+    text-align: center;
+}
+.Graph > div {
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+}
+.filter {
+    position: relative;
+    max-width: 10%;
+    flex-direction: column;
+    justify-self: right;
+}
+.filter > .child {
+    font-size: x-small;
+    flex-direction: row;
+    justify-content: right;
+    position: inherit;
+    width: 100%;
+}

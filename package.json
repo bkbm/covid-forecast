@@ -1,0 +1,19 @@
+{
+  "name": "covid-forecast",
+  "version": "0.1.0",
+  "description": "basic linear regression forecasting on react and node",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkbm/covid-forecast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkbm/covid-forecast/issues"
+  },
+  "homepage": "https://github.com/bkbm/covid-forecast#readme"
+}

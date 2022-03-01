@@ -1,7 +1,7 @@
 import Post from "../models/post";
 import { Response, Request } from "express";
 
-export const createPost = async (req : Request ,res : Response) => {
+export const createPost = async (req : Request , res : Response) => {
     try {
         const post = new Post(req.body);
         await post.save();
@@ -11,7 +11,7 @@ export const createPost = async (req : Request ,res : Response) => {
     }
 }
 
-export const getPost = async (req: Request, res: Response) => {
+export const getPosts = async (req: Request, res: Response) => {
     try {
         const posts = await Post.find();
         res.status(200).json(posts);
